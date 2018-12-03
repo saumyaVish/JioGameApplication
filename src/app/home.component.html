@@ -1,0 +1,56 @@
+<div (keydown)="onKeydown($event)">
+    <nav class="navbar navbar-default nav_Background_clolor focusable" tabindex="1">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand nav_text_color">Jio Games</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="menu" class="container">
+        <ul class="nav nav-pills col-xs-12">
+            <li class="col-xs-5 focusable" id="list">
+                <a> List</a>
+            </li>
+            <li class="col-xs-5 focusable" id="grid">
+                <a> Grid</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <br>
+        <ul class="list-group" *ngIf="ImageList == true">
+            <!-- *ngIf="ImageList == true" -->
+            <li class="list-group-item "> Image 1 &nbsp;
+                <img src="../assets/images/img1.jpg " class="  imageHeightList focusable" id="img1" alt="Cinque Terre">
+            </li>
+            <li class="list-group-item ">Image 2 &nbsp;
+                <img src="../assets/images/img2.jpg" class="  imageHeightList focusable" id="img2" alt="Cinque Terre"> </li>
+            <li class="list-group-item ">Image 3 &nbsp;
+                <img src="../assets/images/img3.jpg" class=" imageHeightList focusable" id="img3" alt="Cinque Terre"> </li>
+        </ul>
+
+        <div class="row" *ngIf="ImageGrid == true">
+            <div class="column">
+                <img src="../assets/images/img1.jpg" class="col-xs-5 focusable imageHeight" id="img1" alt="Cinque Terre">
+                <img src="../assets/images/img2.jpg" class=" col-xs-5 focusable imageHeight" id="img2" alt="Cinque Terre">
+                <br>
+                <img src="../assets/images/img3.jpg" class="col-xs-5 focusable imageHeight" style="margin-top: 5px;" id="img3" alt="Cinque Terre">
+                <img src="../assets/images/img1.jpg" class="col-xs-5 focusable imageHeight" style="margin-top: 5px;" id="img4" alt="Cinque Terre">
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <b>Menu</b>
+            <span class="footer_clear_right">
+                <b>Clear</b>
+            </span>
+        </div>
+
+    </footer>
+</div>
